@@ -77,25 +77,26 @@ function draw() {
      
      divisions[k].display();
    }
-  /* textSize (28);
-  text("score : " + score ,10,30);
-  text("500",20,520);
-  text("500",100,520);
-  text("500",180,520);
-  text("100",260,520);
-  text("100",340,520);
-  text("1000",410,520);
-  text("1000",490,520);
-  text("200",580,520);
-  text("200",660,520);
-  text("200",740,520);
-  text(" x : " + mouseX,300,300);
-  text(" y : " + mouseY,450,300)*/
+  // textSize (28);
+  //text("score : " + score ,10,30);
+//  text("500",20,520);
+//  text("500",100,520);
+  //text("500",180,520);
+  //text("100",260,520);
+  //text("100",340,520);
+  //text("1000",410,520);
+  //text("1000",490,520);
+  //text("200",580,520);
+  //text("200",660,520);
+  //text("200",740,520);
+  //text(" x : " + mouseX,300,300);
+ // text(" y : " + mouseY,450,300)*/
+ mousePressed();
   }
 function mousePressed(){
  if(frameCount%60===0){
     particles.push(new Particle(random(width/2-30, width/2+30), 10,10));
-    turn=turn+1
+   // turn=turn+1
   //  console.log("hi");
    // score++;
   }
