@@ -1,4 +1,4 @@
-var Engine = Matter.Engine,
+ Engine = Matter.Engine,
   World = Matter.World,
   Events = Matter.Events,
   Bodies = Matter.Bodies;
@@ -77,7 +77,7 @@ function draw() {
      
      divisions[k].display();
    }
-   textSize (28);
+  /* textSize (28);
   text("score : " + score ,10,30);
   text("500",20,520);
   text("500",100,520);
@@ -90,13 +90,13 @@ function draw() {
   text("200",660,520);
   text("200",740,520);
   text(" x : " + mouseX,300,300);
-  text(" y : " + mouseY,450,300)
+  text(" y : " + mouseY,450,300)*/
   }
 function mousePressed(){
- // if(){
+ if(frameCount%60===0){
     particles.push(new Particle(random(width/2-30, width/2+30), 10,10));
     turn=turn+1
   //  console.log("hi");
    // score++;
-  //}
+  }
 }
